@@ -1,4 +1,5 @@
 import './App.css';
+import ClassComponent from './ClassComponent';
 import Mycomponent from './Mycomponent';
 
 function App() {
@@ -33,40 +34,12 @@ function App() {
     <>
     <div className="App">
       <h3>My React Component</h3>
-      <h4>A is -- {a}</h4>
-      <h4 style={st}>Name is -- {name}</h4>
-      <h4>Addition is -- {10+20}</h4>
-      <ul>
-          {
-            arr.map((i,index)=>{
-              return <li key={index}>{i}</li> 
-            })
-          }
-      </ul>
-      <h5 style={{color:"red",backgroundColor:"yellow"}}>Name is -- {obj.name}</h5>
-      <hr />
-      <table border={'2'} align='center' bgcolor='red'>
-        <tr>
-          <th>Id</th>
-          <th>Name</th>
-        </tr>
-        {
-          user.map((i)=>{
-              return (
-                <tr>
-                  <td>{i.uid}</td>
-                  <td>{i.uname}</td>
+      <ClassComponent name="AbcPqr"/>
 
-                </tr>
-              )
-          })
-        }
-      </table>
-      <Mycomponent />
+      {/* <Mycomponent name="Test"/> */}
+
     </div>
-    <div>
-      dsfbsdfbjh
-    </div>
+    
     </>
   );
 

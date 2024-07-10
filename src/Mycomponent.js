@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Mycomponent = () => {
+const Mycomponent = (props) => {
     console.log('component created by me.');
   return (
     <div>
-      <h3>My First component</h3>
+      <h3>My First component --- {props.name}</h3>
     </div>
   )
 }
