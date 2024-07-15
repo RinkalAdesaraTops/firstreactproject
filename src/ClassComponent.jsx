@@ -6,7 +6,8 @@ class ClassComponent extends Component {
         this.state = {
             name:this.props.name,
             id:101,
-            course:"MERNstack"
+            course:"MERNstack",
+            count:0
         }
     }
     render() {

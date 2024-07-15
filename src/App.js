@@ -1,5 +1,6 @@
 import './App.css';
 import ClassComponent from './ClassComponent';
+import Countercomponent from './Countercomponent';
 import Mycomponent from './Mycomponent';
 
 function App() {
@@ -34,10 +35,10 @@ function App() {
     <>
     <div className="App">
       <h3>My React Component</h3>
-      <ClassComponent name="AbcPqr"/>
+      {/* <ClassComponent name="AbcPqr"/> */}
 
       {/* <Mycomponent name="Test"/> */}
-
+<Countercomponent />
     </div>
     
     </>
