@@ -5,6 +5,7 @@ import Countercomponent from './Countercomponent';
 import Firstcomponent from './Firstcomponent';
 import Login from './Login';
 import Logout from './Logout';
+import Lifecyclecomponent from './Lifecyclecomponent';
 
 function App() {
   let a=10;
@@ -46,7 +47,7 @@ function App() {
 
     { isLogin ? <Login /> :<Logout /> }
     <button onClick={()=> setIsLogin(!isLogin)}> { isLogin ? "Logout" : "Login" }</button>
- 
+    
  <ul>
     {
       user.map((i,index)=>{
@@ -55,6 +56,7 @@ function App() {
     }
 
  </ul>
+ <Lifecyclecomponent />
     </div>
     
     </>
