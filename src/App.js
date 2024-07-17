@@ -1,8 +1,5 @@
 import './App.css';
 import React,{useState} from 'react';
-import ClassComponent from './ClassComponent';
-import Countercomponent from './Countercomponent';
-import Firstcomponent from './Firstcomponent';
 import Login from './Login';
 import Logout from './Logout';
 import Lifecyclecomponent from './Lifecyclecomponent';
