@@ -5,16 +5,8 @@ import Logout from './Logout';
 import Lifecyclecomponent from './Lifecyclecomponent';
 
 function App() {
-  let a=10;
-  let name = "Test";
-  let arr=[10,20,30,40,50]
   const [isLogin,setIsLogin] = useState(0)
-  let obj = {
-    "id":101,
-    "name":"test",
-    "age":25,
-    "salary":25000
-  }
+  
   let user = [
     {
       "uid":101,
@@ -29,18 +21,12 @@ function App() {
       "uname":"abc"
     }
   ]
-  let st = {
-    color:"maroon",
-    backgroundColor:"yellowgreen"
-  }
+ 
   return (
     <>
     <div className="App">
       <h3>My React Component</h3>
-      {/* <ClassComponent name="AbcPqr"/> */}
-
-      {/* <Mycomponent name="Test"/> */}
-<Countercomponent />
+  
 
     { isLogin ? <Login /> :<Logout /> }
     <button onClick={()=> setIsLogin(!isLogin)}> { isLogin ? "Logout" : "Login" }</button>
